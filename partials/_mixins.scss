@@ -1,5 +1,5 @@
-@import "bourbon/bourbon";
-@import "partials/buttons";
+@import "../bourbon/bourbon";
+@import "buttons";
 
 @mixin user-select($value: text) {
     -webkit-user-select: $value;
