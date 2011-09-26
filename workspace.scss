@@ -1,6 +1,5 @@
+@import "bourbon/bourbon";
 @import "partials/mixins";
-@import "partials/shadows";
-@import "partials/toolbar";
 
 .col {
     @include inline-block;

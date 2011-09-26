@@ -1,11 +1,5 @@
-@import "partials/colors";
+@import "bourbon/bourbon";
 @import "partials/mixins";
-@import "partials/shadows";
-
-@import "partials/toolbar";
-@import "partials/report";
-
-
 
 #search {
     @include search-box;
@@ -219,7 +213,6 @@
 }
 
 #description {
-    @include raised-drop-shadow;
     @include border-radius(5px);
     @include vertical-thin-scrollbar;
     

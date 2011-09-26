@@ -11,7 +11,7 @@
 	
 	thead, tfoot {
         td, th {
-            @include raised(#FFF9A4);
+            @include box-raised(#FFF9A4);
             border: 1px solid darken(#fff9a4, 40);
             text-align: center;
             font-weight: 500;
@@ -22,7 +22,7 @@
         .desc, .asc {
             // this cannot be used since the arrow icons override the
             // 'background-image' anyway.
-            // @include raised(#FFEA5F);
+            // @include box-raised(#FFEA5F);
 
             background-color: #FFEA5F;
             border-color: darken(#FFEA5F, 30);

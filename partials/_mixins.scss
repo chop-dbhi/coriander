@@ -1,6 +1,3 @@
-@import "../bourbon/bourbon";
-@import "buttons";
-
 @mixin user-select($value: text) {
     -webkit-user-select: $value;
     -khtml-user-select: $value;
@@ -9,6 +6,18 @@
     user-select: $value;
 }
 
+// sets the opacity of an element. this is not to be confused
+// with the official Sass function that "opacifies" a color
+// http://css-tricks.com/snippets/css/cross-browser-opacity/
+@mixin opacity($p) {
+    /* IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$p})";
+    /* IE 5-7 */
+    filter: alpha(opacity=$p);
+    -moz-opacity: $p/100;
+    -kthml-opacity: $p/100;
+    opacity: $p/100;
+}
 
 // adds a letter "press" effect to the text. this effects only works if the
 // surrounding color is lighter than the text color
@@ -27,14 +36,6 @@
     text-shadow: 0 1px $blur $bgcolor;
 }
 
-// sets the opacity of an element. this is not to be confused with
-// the official Sass function that "opacifies" a color
-@mixin opacity($p) {
-    filter:alpha(opacity=$p);
-    -moz-opacity: $p/100;
-    opacity: $p/100;
-}
-
 // shorcut to set anchor colors for each pseudo state
 @mixin anchors($c1, $c2) {
     a {
@@ -44,7 +45,7 @@
 }
 
 // adds a "raised" appearance to the element
-@mixin raised($color, $blur: 2px) {
+@mixin box-raised($color, $blur: 2px) {
     background-color: $color;
     border: 1px solid darken($color, 20);
     @include box-shadow(
@@ -55,7 +56,7 @@
 }
 
 // adds an "inset" appearance to the element
-@mixin inset($color, $blur: 2px) {
+@mixin box-inset($color, $blur: 2px) {
     background-color: $color;
     border: 1px solid darken($color, 20);
     @include box-shadow(

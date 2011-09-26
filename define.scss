@@ -1,16 +1,7 @@
-@import "partials/colors";
+@import "bourbon/bourbon";
 @import "partials/mixins";
-@import "partials/shadows";
-@import "partials/popover";
-@import "partials/toolbar";
-@import "partials/report";
 
-$BLUE: hsl(207, 100, 33);
-
-/*
- * Panes - layout
- */
-
+// layout
 #left-pane {
     width: 745px;
     position: relative;
@@ -39,10 +30,6 @@ $BLUE: hsl(207, 100, 33);
     right: 0;
     width: 200px;
 }
-
-/*
- * Navigation tabs
- */
 
 #tabs {
     border-bottom: 1px solid #aaa;
@@ -105,7 +92,7 @@ $BLUE: hsl(207, 100, 33);
     > .active {
         @include box-shadow(0 -5px 10px #eee inset);
 
-        color: $BLUE;
+        color: #002e54;
         border-color: #999;
         border-bottom-color: #eee;
         background: #fff;
@@ -115,7 +102,7 @@ $BLUE: hsl(207, 100, 33);
         position: relative;
         
         &:hover {
-            color: $BLUE;
+            color: #002e54;
             cursor: default;        
         }
     }
@@ -139,10 +126,10 @@ $BLUE: hsl(207, 100, 33);
         @include border-radius(10px);
 
         &.active {
-            @include box-shadow(inset 0 2px 5px darken($BLUE, 15));
+            @include box-shadow(inset 0 2px 5px darken(#002e54, 15));
             color: #fff;
-            text-shadow: 0 1px 2px darken($BLUE, 20);
-            background-color: $BLUE;
+            text-shadow: 0 1px 2px darken(#002e54, 20);
+            background-color: #002e54;
         }
     }
 }
@@ -181,9 +168,9 @@ $BLUE: hsl(207, 100, 33);
         font-weight: 500;
         
         &.active {
-            @include raised($BLUE);
+            @include box-raised(#002e54);
             color: #fff;
-            text-shadow: 0px 1px 2px darken($BLUE, 20);
+            text-shadow: 0px 1px 2px darken(#002e54, 20);
 
             &:hover {
                 color: #fff;

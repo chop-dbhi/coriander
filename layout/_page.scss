@@ -1,4 +1,36 @@
-#toolbar {
+// document header containing the project logo and account nagivation
+#header {
+    @include anchors(#666, #333);
+    @include box-shadow(0 1px 3px darken(#dadfe8, 20), inset 0 1px 3px #aaa);
+
+    color: #666;
+    font-size: 0.85em;
+
+    position: top;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+
+    min-height: 25px;
+    padding: 5px 10px;
+
+    background-color: #fcfcfc;
+    border-bottom: 1px solid #fff;
+
+    > * {
+        vertical-align: middle;        
+    }
+    
+    > span {
+        float: right;
+        margin-top: 7px;      
+    }
+}
+
+
+// the main navigation across all pages
+#main-nav {
     @include anchors(#aaa, #fff);
     @include box-shadow(inset 0 1px 2px #666, inset 0 -1px 2px #111, 0 1px 2px #999);
 
@@ -84,5 +116,55 @@
                 background-position: 0 -13px;
             }
         }
+    }
+}
+
+// hidden placeholder for application messages to be made visible
+#messages {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    
+    .message-block {
+        &.success { @include message-block(#b4eb87, success); }
+        &.warning { @include message-block(#f9f482, warning); }
+        &.error { @include message-block(#efa2a1, error); }
+        &.information { @include message-block(#aad8fb, info); }
+    }
+}
+
+// area for page-specific content
+#content {
+    position: relative;
+    top: 20px;
+    width: 960px;
+    margin: 0 auto;
+}
+
+// document footer for project copyright and other info
+#footer {
+    position: relative;
+    top: 70px;
+    left: 0;
+    right: 0;
+
+    color: darken(#dadfe8, 50);
+    text-shadow: 0 1px 2px lighten(#dadfe8, 100);
+    font-size: 0.9em;
+    text-align: center;
+}
+
+// the Harvest tractor
+#harvest-logo {
+    margin: 0 auto;
+    background: transparent url(../img/harvest_tractor.png) no-repeat;
+    height: 33px;
+    width: 114px;
+}
+
+
+.ie7 {
+    #header {
+        border-bottom: 1px solid darken(#dadfe8, 10);
     }
 }

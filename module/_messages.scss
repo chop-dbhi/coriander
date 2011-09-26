@@ -1,0 +1,13 @@
+.messages {
+    .success { @include message(#b4eb87, success); }
+    .warning { @include message(#f9f482, warning); }
+    .error { @include message(#efa2a1, error); }
+    .information { @include message(#aad8fb, info); }
+}
+
+.message {
+    &.success { @include message(#b4eb87, success); }
+    &.warning { @include message(#f9f482, warning); }
+    &.error { @include message(#efa2a1, error); }
+    &.information { @include message(#aad8fb, info); }
+}
