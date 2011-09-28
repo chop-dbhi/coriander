@@ -10,7 +10,7 @@
     @include border-radius(3px);  
     @include linear-gradient(top, $start, $stop);
     
-    border: 1px solid $stop;
+    border: 1px solid darken($stop, 5);
     border-bottom: 1px solid darken($stop, 10);
     color: $color;
     line-height: 1;
