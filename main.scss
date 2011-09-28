@@ -1,23 +1,15 @@
 // mixins
-@import "bourbon/bourbon";
-@import "partials/mixins";
+@import "mixins/all";
 
 // base styles
-@import "base/boilerplate";
-@import "base/overrides";
+@import "base/all";
 
 // layout
-@import "layout/page";
+@import "layout/all";
 
 // modules
-@import "module/buttons";
-@import "module/container";
-@import "module/popover";
-@import "module/sortable";
-@import "module/text";
-@import "module/jquery-ui";
+@import "module/all";
 
 // state
-@import "state/buttons";
-@import "state/loading";
+@import "state/all";
 
