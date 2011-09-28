@@ -61,15 +61,6 @@
         &.selected {
             @include box-shadow(none);
             background-color: #111;
-            .workspace {
-                background-position: 0 -13px;
-            }
-            .databrowse {
-                background-position: 0 -12px;
-            }
-            .query {
-                background-position: 0 -13px;
-            }
         }
     }
 
@@ -87,34 +78,6 @@
             position: relative;
             top: 1px;
             width: 14px;
-        }
-
-        .workspace {
-            background: transparent url(../img/icons/workspace.png) no-repeat 0 0;
-            height: 12px;
-        }
-
-        .databrowse {
-            background: transparent url(../img/icons/databrowse.png) no-repeat 0 0;
-            height: 11px;
-        }
-
-        .query {
-            background: transparent url(../img/icons/query.png) no-repeat 0 0;
-            top: 2px;
-            height: 13px;
-        }
-
-        &:hover, &:active {
-            .workspace {
-                background-position: 0 -13px;
-            }
-            .databrowse {
-                background-position: 0 -12px;
-            }
-            .query {
-                background-position: 0 -13px;
-            }
         }
     }
 }
@@ -153,15 +116,6 @@
     font-size: 0.9em;
     text-align: center;
 }
-
-// the Harvest tractor
-#harvest-logo {
-    margin: 0 auto;
-    background: transparent url(../img/harvest_tractor.png) no-repeat;
-    height: 33px;
-    width: 114px;
-}
-
 
 .ie7 {
     #header {

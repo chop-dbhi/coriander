@@ -20,7 +20,6 @@ hr { margin: 5px 0; border-color: #ddd; }
 body {
     @include user-select(none);
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background: url(../img/linen_tile.png);
 }
 
 table {
@@ -37,7 +36,7 @@ table {
 // the first cell in each row (assuming it is a th) needs some padding
 // so it does not bump up against the next cell
 table tbody tr > th:first-child {
-    text-align: right;    
+    text-align: right;
     padding-right: 10px;
 }
 
@@ -48,7 +47,7 @@ label {
 section {
     @include box-inset(#fff);
     @include border-radius(3px);
-    
+
     border-color: #aaa;
     padding: 10px;
 }
@@ -61,7 +60,7 @@ button::-moz-focus-inner {
 input, textarea {
     @include box-inset(#f6f6f6);
     @include border-radius(3px);
-    
+
     outline: none;
     padding: 2px;
     width: 150px;
