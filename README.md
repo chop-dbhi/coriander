@@ -1,6 +1,6 @@
 Build
 =====
-cilantro-sass contains a built non-Rails version of [Bourbon][] via
+Coriander contains a built non-Rails version of [Bourbon][] via
 the instructions per the project's README. It ships with additional
 sass extensions written in Ruby, thus the compilation step must reference
 the additional library:
