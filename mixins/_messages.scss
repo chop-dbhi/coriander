@@ -1,9 +1,9 @@
 // shorcut to define a message color scheme
-@mixin message($bgcolor, $image) {
+@mixin message($color, $image) {
     font-weight: 500;
-    color: darken($bgcolor, 60);
+    color: $color;
 	padding: 0 0 0 23px;
-    background: $bgcolor url(../img/icons/#{$image}.png) no-repeat 0px;
+    background: transparent url(../img/icons/#{$image}.png) no-repeat 0px;
 }
 
 @mixin message-block($bgcolor, $image) {
