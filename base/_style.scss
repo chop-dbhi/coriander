@@ -50,6 +50,10 @@ section {
 
     border-color: #aaa;
     padding: 10px;
+
+    > :first-child {
+        margin-top: 0;
+    }
 }
 
 
