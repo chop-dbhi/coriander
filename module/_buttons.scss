@@ -3,7 +3,7 @@ input[type=button], input[type=submit], button {
     padding: 3px 8px;
     font-size: 11px;
 
-    &.delete, &.red {
+    &.delete, &.revert, &.red {
         @include clean-button(rgb(194, 51, 55), none, #fff);
     }
 
@@ -15,7 +15,7 @@ input[type=button], input[type=submit], button {
 // a div containing multiple button for operations such
 // as save, cancel, and delete
 .controls {
-    .delete, .red {
+    .delete, .revert, .red {
         float: left;
     }
 }
