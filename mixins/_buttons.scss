@@ -9,7 +9,7 @@
 
     @include border-radius(3px);  
     @include linear-gradient(top, $start, $stop);
-    @include box-shadow(none);
+    @include box-shadow(0 1px 1px desaturate($start, 50));
     
     border: 1px solid darken($stop, 5);
     border-bottom: 1px solid darken($stop, 10);
