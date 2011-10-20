@@ -19,9 +19,9 @@
     font-weight: bold;
 
     @if is-dark-on-light($color, $start) {
-        text-shadow: 0 1px 0 $start;
+        text-shadow: 0 1px 1px $start;
     } @else {
-        text-shadow: 0 1px 0 darken($stop, 10);
+        text-shadow: 0 1px 1px darken($stop, 10);
     }
 
     &:hover {
@@ -30,9 +30,9 @@
         border-bottom: 1px solid darken($stop, 20);
         cursor: pointer;
         @if is-dark-on-light($color, $start) {
-            text-shadow: 0 1px 0 darken($start, 10);
+            text-shadow: 0 1px 1px darken($start, 10);
         } @else {
-            text-shadow: 0 1px 0 darken($stop, 30);
+            text-shadow: 0 1px 1px darken($stop, 30);
         }
     }
 
