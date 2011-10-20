@@ -88,13 +88,6 @@
     margin: 0 auto;
     text-align: center;
     height: 30px;
-    
-    .message-block {
-        &.success { @include message-block(#b4eb87, success); }
-        &.warning { @include message-block(#f9f482, warning); }
-        &.error { @include message-block(#efa2a1, error); }
-        &.information { @include message-block(#aad8fb, info); }
-    }
 }
 
 // area for page-specific content

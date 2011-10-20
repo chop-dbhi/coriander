@@ -16,3 +16,11 @@ $information: hsl(211, 73%, 20%);
     &.error { @include message($error, error); }
     &.information { @include message($information, info); }
 }
+
+.message-block {
+    &.success { @include message-block(#b4eb87, success); }
+    &.warning { @include message-block(lighten(#f9f482, 10), warning); }
+    &.error { @include message-block(#efa2a1, error); }
+    &.information { @include message-block(#aad8fb, info); }
+}
+
