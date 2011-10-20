@@ -87,6 +87,7 @@
     position: relative;
     margin: 0 auto;
     text-align: center;
+    height: 30px;
     
     .message-block {
         &.success { @include message-block(#b4eb87, success); }
