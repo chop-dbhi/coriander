@@ -16,6 +16,7 @@
 .container {
     @include box-shadow(0 1px 5px #777);	
     @include border-radius(3px);
+    background-color: #eee;
 
     // container title bar
     > .title {
@@ -85,10 +86,10 @@
         
         font-size: inherit;
         padding: 10px;
-        background-color: #fff;
         font-style: normal;
         font-size: 0.9em;
         border-bottom: 1px solid #ccc;
+        background-color: #f9f9f9;
     }
 
     // container content area, keep it simple...
@@ -96,9 +97,8 @@
         @include text-shadow(inset, #444);
         @include border-radius(0 0 3px 3px);
         
-        border-top: 1px solid #fff;
-        background-color: #eee;
         padding: 10px;
+        background-color: #f9f9f9;
 
         // ensure elements don't expand the edges..
         > :first-child {
