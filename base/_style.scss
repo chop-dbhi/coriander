@@ -84,10 +84,13 @@ input[type=file] {
 }
 
 // reset width for other input types..
-input[type=submit], input[type=button],
+input[type=submit], input[type=button] {
+    min-width: 75px;
+}
+
 input[type=radio], input[type=checkbox],
 input[type=file] {
-    min-width: 75px;
+    min-width: 0;
 }
 
 textarea {
