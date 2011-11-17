@@ -58,7 +58,7 @@ section {
 
 
 button::-moz-focus-inner {
-  border:0;
+  border: 0;
 }
 
 input, textarea {
@@ -66,10 +66,9 @@ input, textarea {
     @include border-radius(3px);
 
     outline: none;
-    padding: 2px;
-    width: 150px;
+    padding: 3px;
+    min-width: 150px;
     border: 1px solid #aaa;
-
     background-color: #fff;
 
     &:disabled {
@@ -80,7 +79,7 @@ input, textarea {
 // reset width for other input types..
 input[type=submit], input[type=button],
 input[type=radio], input[type=checkbox] {
-    width: auto;
+    min-width: 75px;
 }
 
 textarea {

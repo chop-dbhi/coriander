@@ -21,11 +21,20 @@
     > * {
         vertical-align: middle;        
     }
-    
+
+    h1 {
+        display: inline;
+        margin: 0;
+    }
+
     > span {
         float: right;
         margin-top: 7px;      
     }
+}
+
+#logo-link {
+    text-decoration: none;
 }
 
 
@@ -96,6 +105,7 @@
     top: 20px;
     width: 960px;
     margin: 0 auto;
+    text-align: center;
 }
 
 // document footer for project copyright and other info

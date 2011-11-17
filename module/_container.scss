@@ -16,7 +16,9 @@
 .container {
     @include box-shadow(0 1px 5px #777);	
     @include border-radius(3px);
+    @include inline-block;
     background-color: #eee;
+    text-align: left;
 
     // container title bar
     > .title {
@@ -90,14 +92,23 @@
         font-size: 0.9em;
         border-bottom: 1px solid #ccc;
         background-color: #f9f9f9;
+        text-align: center;
+
+        > :first-child {
+            margin-top: 0;
+        }
+
+        > :last-child {
+            margin-bottom: 0;
+        }
     }
 
     // container content area, keep it simple...
     > .content {
-        @include text-shadow(inset, #444);
         @include border-radius(0 0 3px 3px);
         
         padding: 10px;
+        text-shadow: 0 1px 1px #fff;
 
         // ensure elements don't expand the edges..
         > :first-child {
@@ -146,7 +157,16 @@
             }
         }
     }
+
+    &.no-title {
+        .info {
+            @include box-shadow(none);
+            @include border-radius(3px 3px 0 0);
+        }
+    }
 }
+
+
 
 // Begin IE fixes/mods...
 .ie7 {

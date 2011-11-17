@@ -1,6 +1,6 @@
 input[type=button], input[type=submit], button {
     @include clean-button(#999, none, #fff);
-    padding: 3px 8px;
+    padding: 4px 8px;
     font-size: 11px;
 
     &.delete, &.revert, &.red {
@@ -16,6 +16,7 @@ input[type=button], input[type=submit], button {
 // as save, cancel, and delete
 .controls {
     text-align: right;
+    margin-top: 10px;
 
     .delete, .revert, .red {
         float: left;
