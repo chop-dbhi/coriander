@@ -31,13 +31,26 @@ table {
         padding-top: 7px;
         padding-bottom: 7px;
     }
+
+    td {
+        padding-right: 7px;
+        padding-left: 7px;
+    }
+
+    tr > td:first-child {
+        padding-left: 0;
+    }
+
+    tr > td:last-child {
+        padding-right: 0;
+    }
 }
 
 // the first cell in each row (assuming it is a th) needs some padding
 // so it does not bump up against the next cell
 table tbody tr > th:first-child {
     text-align: right;
-    padding-right: 10px;
+    min-width: 75px;
 }
 
 label {
@@ -68,7 +81,7 @@ input, textarea {
 
     outline: none;
     padding: 3px;
-    min-width: 150px;
+    min-width: 200px;
     border: 1px solid #aaa;
     background-color: #fff;
 
