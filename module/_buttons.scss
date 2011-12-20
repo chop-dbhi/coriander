@@ -1,4 +1,4 @@
-input[type=button], input[type=submit], button {
+.button, input[type=button], input[type=submit], button {
     @include clean-button(#999, none, #fff);
     padding: 4px 8px;
     font-size: 11px;
