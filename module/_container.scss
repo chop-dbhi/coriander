@@ -17,6 +17,7 @@
     @include box-shadow(0 2px 4px #999);
     @include border-radius(3px);
     background-color: #eee;
+    text-align: left;
 
     // container title bar
     > .title {
