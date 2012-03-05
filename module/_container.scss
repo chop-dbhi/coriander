@@ -2,6 +2,7 @@
     @include border-radius(3px 3px 0 0);
     @include text-shadow(#eee);
     @include box-shadow(inset 0 1px 2px #666, inset 0 -1px 2px #111);
+    @include user-select(none);
 
     background-color: #333;
     border: 1px solid #111;
@@ -120,6 +121,7 @@
     }
 
     .tabs {
+        @include user-select(none);
         padding: 5px 0 7px 10px;
         display: block;
 
