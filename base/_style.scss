@@ -23,14 +23,24 @@ table {
     margin-bottom: 0;
 
     td, th {
+        padding: 7px;
         vertical-align: top;
-        padding-top: 7px;
-        padding-bottom: 7px;
     }
 
-    td {
-        padding-right: 7px;
-        padding-left: 7px;
+    table {
+        thead, tfoot {
+            td, th {
+                padding-top: 0;
+                padding-bottom: 7px;
+            }
+        }
+
+        td > * {
+            padding-top: 0;
+            padding-bottom: 0;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
     }
 }
 
